@@ -2,6 +2,12 @@ require 'bundler'
 Bundler.require
 
 class MyApp < Sinatra::Base
-  #this is where all of the routes will go
-  #get '/' do
+  get '/' do
+    erb :index
+  end
+
+  get '/quiz' do
+    erb :quiz
+  end
+
 end
